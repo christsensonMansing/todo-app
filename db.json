@@ -1,14 +1,49 @@
 {
   "todos": [
     {
-      "id": 1,
-      "text": "Welcome to your Todo List!",
-      "completed": false
+      "text": "dsa",
+      "completed": true,
+      "id": 1
     },
     {
-      "id": 2,
-      "text": "Add your first task",
-      "completed": false
+      "text": "fdws",
+      "completed": true,
+      "id": 2
+    },
+    {
+      "text": "dsadsa",
+      "completed": true,
+      "id": 3
+    },
+    {
+      "text": "dsadsa",
+      "completed": true,
+      "id": 4
+    },
+    {
+      "text": "buy groceries",
+      "completed": true,
+      "id": 5
+    },
+    {
+      "text": "meal prep for the",
+      "completed": true,
+      "id": 6
+    },
+    {
+      "text": "gfgfd",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "text": "gfdg",
+      "completed": false,
+      "id": 8
+    },
+    {
+      "text": "bbuy",
+      "completed": false,
+      "id": 9
     }
   ]
 }
