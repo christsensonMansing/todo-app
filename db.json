@@ -1,49 +1,19 @@
 {
   "todos": [
     {
-      "text": "dsa",
-      "completed": true,
+      "text": "Welcome to my todo app!",
+      "completed": false,
       "id": 1
     },
     {
-      "text": "fdws",
+      "text": "Buy groceries",
       "completed": true,
       "id": 2
     },
     {
-      "text": "dsadsa",
-      "completed": true,
+      "text": "Walk the dog",
+      "completed": false,
       "id": 3
-    },
-    {
-      "text": "dsadsa",
-      "completed": true,
-      "id": 4
-    },
-    {
-      "text": "buy groceries",
-      "completed": true,
-      "id": 5
-    },
-    {
-      "text": "meal prep for the",
-      "completed": true,
-      "id": 6
-    },
-    {
-      "text": "gfgfd",
-      "completed": false,
-      "id": 7
-    },
-    {
-      "text": "gfdg",
-      "completed": false,
-      "id": 8
-    },
-    {
-      "text": "bbuy",
-      "completed": false,
-      "id": 9
     }
   ]
 }

@@ -333,25 +333,25 @@ nav .tab-count {
   overflow-y: scroll;
 }
 
-.suggestion{
-  padding: .6em 1.5em;
+.suggestion {
+  padding: 0.6em 1.5em;
   transition: all 0.15s ease;
 }
 
-.suggestion:first-of-type{
+.suggestion:first-of-type {
   border-radius: 10px 10px 0px 0px;
 }
 
-.suggestion:last-of-type{
+.suggestion:last-of-type {
   border-radius: 0px 0px 10px 10px;
 }
 
-.highlight{
-  color: var(--primary-color) ;
+.highlight {
+  color: var(--primary-color);
 }
 
 .suggestion:hover,
-.suggestion-highlight{
+.suggestion-highlight {
   background-color: var(--suggestion-background-2);
   cursor: pointer;
 }

@@ -4,7 +4,7 @@ import TodoItem from "../components/TodoItem";
 import Tabs from "../components/Tabs";
 import TodoQuote from "../components/TodoQuote";
 
-const API_URL = "http://localhost:3000/todos";
+const API_URL = "https://todo-app-json-server-r5ao.onrender.com/todos";
 
 const TodoList = (props) => {
   const [todos, setTodos] = useState([]);
@@ -12,7 +12,7 @@ const TodoList = (props) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const {notify} = props
+  const { notify } = props;
 
   useEffect(() => {
     fetchTodos();
@@ -43,7 +43,7 @@ const TodoList = (props) => {
       if (!response.ok) throw new Error("Failed to add todo");
       const newTodo = await response.json();
       setTodos([...todos, newTodo]);
-      notify("Task added!")
+      notify("Task added!");
     } catch (err) {
       setError(err.message);
     }
@@ -62,7 +62,7 @@ const TodoList = (props) => {
       if (!response.ok) throw new Error("Failed to update todo");
       const updatedTodo = await response.json();
       setTodos(todos.map((t) => (t.id === id ? updatedTodo : t)));
-      notify("Task completed!")
+      notify("Task completed!");
     } catch (err) {
       setError(err.message);
     }
@@ -80,7 +80,7 @@ const TodoList = (props) => {
       if (!response.ok) throw new Error("Failed to update todo");
       const updatedTodo = await response.json();
       setTodos(todos.map((t) => (t.id === id ? updatedTodo : t)));
-      notify("Task edited!")
+      notify("Task edited!");
     } catch (err) {
       setError(err.message);
     }
@@ -93,13 +93,11 @@ const TodoList = (props) => {
       });
       if (!response.ok) throw new Error("Failed to delete todo");
       setTodos(todos.filter((todo) => todo.id !== id));
-      notify("Task deleted!")
+      notify("Task deleted!");
     } catch (err) {
       setError(err.message);
     }
   };
-
-
 
   if (loading) {
     return (
@@ -195,7 +193,6 @@ const TodoList = (props) => {
           ))
         )}
       </div>
-
     </div>
   );
 };
